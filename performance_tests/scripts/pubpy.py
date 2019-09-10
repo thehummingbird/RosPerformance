@@ -3,17 +3,17 @@ import rospy
 from performance_tests.msg import SuperAwesome
 
 def publisher():
-    PubPy = rospy.Publisher('/publishMsg', SuperAwesome,queue_size=10)
-    rospy.init_node('pub_py', anonymous=True)
-    r = rospy.Rate(10) #10hz
+    PubPy = rospy.Publisher('/publishMsg', SuperAwesome,queue_size=100)
+    rospy.init_node('pub_py')
     msg = SuperAwesome()
-    msg.data = "PyHello"
-
+    
+    rate = rospy.Rate(rospy.get_param("/pub_py/py_pub_rate"))
     while not rospy.is_shutdown():
-        rospy.loginfo(msg)
+        #rospy.loginfo(msg)
         msg.header.stamp = rospy.Time.now()
+        msg.data = "Publishing"
         PubPy.publish(msg)
-        r.sleep()
+        rate.sleep()
 
 if __name__ == '__main__':
     try:

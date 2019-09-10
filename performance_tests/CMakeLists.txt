@@ -4,9 +4,10 @@ project(performance_tests)
 add_compile_options(-std=c++11)
 
 find_package(catkin REQUIRED COMPONENTS
+        roscpp
+        rospy
         std_msgs
         message_generation
-        controller_manager
 )
 
 
@@ -19,7 +20,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
    DEPENDENCIES
-   std_msgs  # Or other packages containing msgs
+   std_msgs
  )
 
 

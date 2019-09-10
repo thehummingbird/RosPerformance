@@ -1,16 +1,15 @@
 #include "ros/ros.h"
 #include "performance_tests/SuperAwesome.h"
 
-
 class PubCpp
 {
 public:
   PubCpp();
   ros::Publisher cpp_publisher;
+
 private:
   ros::NodeHandle n;
 
-  
 };
 
 PubCpp::PubCpp()
@@ -24,18 +23,25 @@ int main(int argc,char** argv)
   ros::init(argc,argv,"pub_cpp");
   PubCpp Obj;
   performance_tests::SuperAwesome msg;
-  msg.header.frame_id = "/world";
-  int count =0;
-  ros::Rate loop_rate(500);
+
+  double rate;
+  if (!(ros::param::get("/pub_cpp/cpp_pub_rate",rate)))
+  {
+	ROS_ERROR("No 'cpp_pub_rate'");
+  }
+  ros::Rate loop_rate(rate);
+
   while(ros::ok())
   {
     msg.header.stamp = ros::Time::now();
-    msg.data = "hello"+std::to_string(count);
+    msg.data = "Publisher";
     Obj.cpp_publisher.publish(msg);
-    count++;
+
+    ros::spinOnce();
     loop_rate.sleep();
-    //ROS_INFO("Publishing\n");
-  }		
+
+  }	
+	
   return 0;
 	
 }

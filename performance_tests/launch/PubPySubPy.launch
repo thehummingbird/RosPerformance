@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cpp publisher and Py subscriber -->
+<launch>
+  <!-- Cpp publisher -->
+  <node pkg="performance_tests" type="pubpy.py" name="pub_py">
+    <param name="py_pub_rate" type="double" value="2800"/>
+  </node>
+  <!-- Py subscriber -->
+  <node pkg="performance_tests" type="subpy.py" name="sub_py"/>
+</launch>

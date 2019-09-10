@@ -3,12 +3,11 @@ import rospy
 from performance_tests.msg import SuperAwesome
 
 def callback(message):
-    #rospy.loginfo("message is %s with timestamp %f" % (message.data,message.header.stamp))
-    print('Message is '+message.data+' with timestamp '+str(message.header.stamp)+'\n');
+    print message.data;
 
 def subscriber():
-    rospy.init_node('sub_py', anonymous=True)
-    rospy.Subscriber("/publishMsg", SuperAwesome, callback)
+    rospy.init_node('sub_py')
+    rospy.Subscriber("/publishMsg", SuperAwesome, callback,queue_size=100)
 
     rospy.spin()
 
