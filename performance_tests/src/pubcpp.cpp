@@ -28,11 +28,13 @@ PubCpp::PubCpp()
 
 bool PubCpp::handle_looprate_request(performance_tests::LoopRate::Request& req, performance_tests::LoopRate::Response& res)
 {
+  //handler to service loop rate update request
   loopRate = req.rate;
   changeLoopRate = true;
   return true;
   
 }
+
 int main(int argc,char** argv)
 {
   ros::init(argc,argv,"pub_cpp");
@@ -50,6 +52,8 @@ int main(int argc,char** argv)
 	ros::spinOnce();
 	ros::Duration(0.01).sleep();
       }
+      
+      //update loop rate
       loop_rate = ros::Rate(Obj.loopRate);
       Obj.changeLoopRate = false;
       ros::Duration(1).sleep();

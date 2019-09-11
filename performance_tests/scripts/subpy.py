@@ -11,6 +11,8 @@ count = 0;
 rates = [10,50,100,200,500,1000,1500,2000,2500,4000,5000,8000,10000,12000,15000,20000,25000]
 currRateIndex = 0
 py_subscriber = None
+
+#function to calculate average loop rate
 def calculate_frequency():
     global meanTime
     global freq
@@ -34,6 +36,7 @@ def calculate_frequency():
             rospy.loginfo("End of Test\n")
             py_subscriber.unregister()
             
+#function to update loop rate if the previous loop ran for 10 seconds
 def update_rate():
     global meanTime
     global freq

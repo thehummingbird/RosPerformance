@@ -7,6 +7,7 @@ loopRate = 10
 changeLoopRate = 0
 rate = None
 
+#handler to service loop rate update request
 def handle_looprate_request(request):
     global loopRate
     global changeLoopRate
@@ -14,7 +15,6 @@ def handle_looprate_request(request):
     changeLoopRate = 1
     return LoopRateResponse()
      
-
 def publisher():
     rospy.init_node('pub_py')
     PubPy = rospy.Publisher('/publishMsg', SuperAwesome,queue_size=100)
@@ -30,7 +30,7 @@ def publisher():
             if(loopRate == -1):
                 time.sleep(0.05)
 		continue
-            rate = rospy.Rate(loopRate)
+            rate = rospy.Rate(loopRate) #update loop rate
             changeLoopRate = 0
             rospy.sleep(1)
         msg.data = "Publishing"

@@ -39,6 +39,8 @@ SubCpp::SubCpp()
 
 void SubCpp::calculate_frequency()
 {
+  //method to calculate the average loop rate after every callback
+
   currTime =ros::Time::now().toSec();
   if(prevTime != -1)
   {
@@ -50,15 +52,18 @@ void SubCpp::calculate_frequency()
     }
     else 
       meanTime = timeDiff;
-    freq = (1/meanTime);
+    freq = (1/meanTime); //average loop rate
     count++;
   }
+
   prevTime = currTime;
   if(count==(rates[currRateIndex]*9))
   {
+    //log data when runtime = 9 seconds (out of 10)
     ROS_INFO("Current loop rate = %d; Actual loop rate = %f\n", rates[currRateIndex],freq);
     if(currRateIndex == 16)
     { 
+      //shutdown subscriber when all the rates are tested for
       ROS_INFO("End of Test\n");
       cpp_subscriber.shutdown();
     }
@@ -68,6 +73,8 @@ void SubCpp::calculate_frequency()
 
 void SubCpp::update_rate()
 {
+  //method to update current loop rate if the previous loop ran for 10 seconds
+
   if(count == rates[currRateIndex]*10)
   {
     currRateIndex++;
@@ -77,7 +84,8 @@ void SubCpp::update_rate()
     prevTime=-1;
     count = 0;
     performance_tests::LoopRate srv;
-
+    
+    //update loop rate
     srv.request.rate = -1;
     if(!updateLoopRate.call(srv))
       ROS_ERROR("Failed to update loop rate");
@@ -88,19 +96,23 @@ void SubCpp::update_rate()
     ROS_INFO("Updated loop rate to %d\n",rates[currRateIndex]);
     ros::Duration(1).sleep();
   }
+
 }
+
 void SubCpp::msg_callback(const performance_tests::SuperAwesome msg)
 {
+  //callback method
+
   calculate_frequency();
   update_rate();
 
 }
+
 int main(int argc,char** argv)
 {
   ros::init(argc,argv,"sub_cpp");
   SubCpp Obj;
  
-
   ros::spin();		
   return 0;
 	
