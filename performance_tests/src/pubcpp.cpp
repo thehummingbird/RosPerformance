@@ -1,39 +1,59 @@
 #include "ros/ros.h"
 #include "performance_tests/SuperAwesome.h"
+#include "performance_tests/LoopRate.h"
 
 class PubCpp
 {
 public:
   PubCpp();
   ros::Publisher cpp_publisher;
+  int loopRate;
+  bool changeLoopRate;
+  bool handle_looprate_request(performance_tests::LoopRate::Request& req, performance_tests::LoopRate::Response& res);
 
 private:
   ros::NodeHandle n;
+  ros::ServiceServer service;
 
 };
 
 PubCpp::PubCpp()
 {
   cpp_publisher = n.advertise<performance_tests::SuperAwesome>("/publishMsg",100);
+  service = n.advertiseService("loop_rate",&PubCpp::handle_looprate_request,this);
+  loopRate = 10;
+  changeLoopRate = false;
 
 }
 
+bool PubCpp::handle_looprate_request(performance_tests::LoopRate::Request& req, performance_tests::LoopRate::Response& res)
+{
+  loopRate = req.rate;
+  changeLoopRate = true;
+  return true;
+  
+}
 int main(int argc,char** argv)
 {
   ros::init(argc,argv,"pub_cpp");
   PubCpp Obj;
   performance_tests::SuperAwesome msg;
 
-  double rate;
-  if (!(ros::param::get("/pub_cpp/cpp_pub_rate",rate)))
-  {
-	ROS_ERROR("No 'cpp_pub_rate'");
-  }
-  ros::Rate loop_rate(rate);
+  ros::Rate loop_rate(Obj.loopRate);
 
   while(ros::ok())
   {
-    msg.header.stamp = ros::Time::now();
+    if(Obj.changeLoopRate)
+    {
+      if(Obj.loopRate == -1)
+      {
+	ros::spinOnce();
+	ros::Duration(0.01).sleep();
+      }
+      loop_rate = ros::Rate(Obj.loopRate);
+      Obj.changeLoopRate = false;
+      ros::Duration(1).sleep();
+    }
     msg.data = "Publisher";
     Obj.cpp_publisher.publish(msg);
 

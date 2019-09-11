@@ -1,0 +1,71 @@
+
+
+1568242365.796577516  Node Startup
+1568242375.112041606 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 10; Actual loop rate = 10.000273
+
+1568242377.322244565 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 50
+
+1568242387.263017874 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 50; Actual loop rate = 50.221813
+
+1568242389.313176237 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 100
+
+1568242399.284032064 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 100; Actual loop rate = 100.218101
+
+1568242401.314180149 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 200
+
+1568242411.300047935 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 200; Actual loop rate = 200.211396
+
+1568242413.320070577 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 500
+
+1568242423.314809955 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 500; Actual loop rate = 500.200150
+
+1568242425.330948381 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 1000
+
+1568242435.327544405 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 1000; Actual loop rate = 1000.313354
+
+1568242437.341788137 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 1500
+
+1568242447.339714938 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 1500; Actual loop rate = 1500.304219
+
+1568242449.354219637 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 2000
+
+1568242459.352408428 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 2000; Actual loop rate = 2000.367668
+
+1568242461.365608615 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 2500
+
+1568242471.372756612 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 2500; Actual loop rate = 2497.981889
+
+1568242473.385452586 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 4000
+
+1568242483.384109767 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 4000; Actual loop rate = 4000.631919
+
+1568242485.397394251 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 5000
+
+1568242495.401081396 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 5000; Actual loop rate = 4998.077340
+
+1568242497.413721929 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 8000
+
+1568242507.413870946 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 8000; Actual loop rate = 8000.133034
+
+1568242509.427223795 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 10000
+
+1568242519.426245437 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 10000; Actual loop rate = 10001.369141
+
+1568242521.438791364 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 12000
+
+1568242531.441075236 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 12000; Actual loop rate = 11997.278639
+
+1568242533.454053761 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 15000
+
+1568242543.462189971 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 15000; Actual loop rate = 14986.906022
+
+1568242545.475411860 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 20000
+
+1568242555.508926973 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 20000; Actual loop rate = 19926.761823
+
+1568242557.526050616 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:88(update_rate)] [topics: /rosout] Updated loop rate to 25000
+
+1568242567.749018674 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:59(calculate_frequency)] [topics: /rosout] Current loop rate = 25000; Actual loop rate = 24396.409439
+
+1568242567.749109966 INFO /sub_cpp [/home/sharad/ros/pubsub_ws/src/performance_tests/src/subcpp.cpp:62(calculate_frequency)] [topics: /rosout] End of Test
+

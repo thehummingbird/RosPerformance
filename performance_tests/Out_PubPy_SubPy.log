@@ -1,0 +1,71 @@
+
+
+1568243029.873294154  Node Startup
+1568243039.365281105 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 10; Actual loop rate = 10.000311
+
+1568243042.379429101 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 50
+
+1568243051.402302026 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 50; Actual loop rate = 49.997589
+
+1568243054.413069963 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 100
+
+1568243063.413796901 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 100; Actual loop rate = 99.992882
+
+1568243066.426619052 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 200
+
+1568243075.471904039 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 200; Actual loop rate = 200.003067
+
+1568243078.485656023 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 500
+
+1568243087.532136917 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 500; Actual loop rate = 500.110097
+
+1568243090.543600082 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 1000
+
+1568243099.590326070 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 1000; Actual loop rate = 995.062057
+
+1568243102.605185985 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 1500
+
+1568243111.647927045 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 1500; Actual loop rate = 1493.335124
+
+1568243114.663882017 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 2000
+
+1568243123.706454038 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 2000; Actual loop rate = 1991.211190
+
+1568243126.719626903 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 2500
+
+1568243135.761010885 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 2500; Actual loop rate = 2489.202500
+
+1568243138.774882078 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 4000
+
+1568243147.816965103 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 4000; Actual loop rate = 3982.329446
+
+1568243150.830790996 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 5000
+
+1568243159.879952907 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 5000; Actual loop rate = 4973.956906
+
+1568243162.893029928 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 8000
+
+1568243172.029347896 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 8000; Actual loop rate = 7882.126601
+
+1568243175.049664020 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 10000
+
+1568243185.146367073 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 10000; Actual loop rate = 8915.919149
+
+1568243188.253705978 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 12000
+
+1568243199.777898073 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 12000; Actual loop rate = 9373.246066
+
+1568243203.034395933 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 15000
+
+1568243217.304173946 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 15000; Actual loop rate = 9462.109519
+
+1568243220.953439950 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 20000
+
+1568243240.140230894 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 20000; Actual loop rate = 9382.522359
+
+1568243244.206360101 INFO /sub_py [subpy.py:57(update_rate)] [topics: /publishMsg, /rosout] Updated loop rate to 25000
+
+1568243268.096565961 INFO /sub_py [subpy.py:32(calculate_frequency)] [topics: /publishMsg, /rosout] Current loop rate = 25000; Actual loop rate = 9418.911659
+
+1568243268.097796916 INFO /sub_py [subpy.py:34(calculate_frequency)] [topics: /publishMsg, /rosout] End of Test
+

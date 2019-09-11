@@ -3,8 +3,7 @@
 <launch>
   <!-- Cpp publisher -->
   <node pkg="performance_tests" type="pubpy.py" name="pub_py">
-    <param name="py_pub_rate" type="double" value="2800"/>
   </node>
   <!-- Py subscriber -->
-  <node pkg="performance_tests" type="subpy.py" name="sub_py"/>
+  <node pkg="performance_tests" type="subpy.py" name="sub_py" output="screen"/>
 </launch>
